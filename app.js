@@ -134,6 +134,7 @@ document.querySelector('.submitIT').addEventListener('click',()=>{
     document.querySelector('.list-container').style.height="84%"
     videoName.value='';
     VideoURL.value='';
+    document.location.reload();
 })
 document.querySelector('.close').addEventListener('click',()=>{
     document.querySelector('.list-container').style.height="84%"
