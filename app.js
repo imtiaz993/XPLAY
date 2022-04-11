@@ -124,6 +124,7 @@ document.querySelector('.submitIT').addEventListener('click',()=>{
             document.querySelector('iframe').src=store[0].url
             currentsong.innerText=store[0].name
         }
+        document.location.reload();
          
     }
     else{
@@ -134,7 +135,7 @@ document.querySelector('.submitIT').addEventListener('click',()=>{
     document.querySelector('.list-container').style.height="84%"
     videoName.value='';
     VideoURL.value='';
-    document.location.reload();
+    
 })
 document.querySelector('.close').addEventListener('click',()=>{
     document.querySelector('.list-container').style.height="84%"
