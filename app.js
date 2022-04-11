@@ -59,7 +59,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     });
    }
-   else{
+   if(songs.length===0){
        
     var newVideo=document.createElement('div');
     newVideo.className="empty"
@@ -77,7 +77,7 @@ add.addEventListener('click',()=>{
    
   
 })
-document.querySelector('.submit').addEventListener('click',()=>{
+document.querySelector('.submitIT').addEventListener('click',()=>{
    
     if(videoName.value!=='' && VideoURL.value!==''){
         const myArray = VideoURL.value.split("/");
@@ -117,8 +117,8 @@ document.querySelector('.submit').addEventListener('click',()=>{
         
         document.querySelector('.addSong').style.display='none'
         document.querySelector('.plus').style.display='block'
+        document.querySelector('.empty').style.display='none'
         videolist.appendChild(newVideo);
-        document.querySelector('.empty').style.display="none"
         let store=getStore()
         if(store.length===1){
             document.querySelector('iframe').src=store[0].url
@@ -225,6 +225,7 @@ light.addEventListener('click',()=>{
     document.querySelector('.mode').style.backgroundColor="whitesmoke"
     document.querySelector('.appbar').style.backgroundColor="white";
     document.querySelector('.video-list h4').style.color="black"
+    document.querySelector('.video-list h4').style.borderColor="black"
     document.querySelector('.video-list h4 a').style.color="black"
     document.querySelector('.video-list').style.backgroundColor="white"
     document.querySelector('.player-footer').style.backgroundColor="white"
@@ -261,6 +262,7 @@ dark.addEventListener('click',()=>{
     document.querySelector('.mode').style.backgroundColor="gray"
     document.querySelector('.appbar').style.backgroundColor="rgba(40,40,40)";
     document.querySelector('.video-list h4').style.color="white"
+    document.querySelector('.video-list h4').style.borderColor="white"
     document.querySelector('.video-list h4 a').style.color="white"
     document.querySelector('.video-list').style.backgroundColor="rgb(0,0,0)"
     document.querySelector('.player-footer').style.backgroundColor="rgba(20,20,20)"

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +10,9 @@
     <link rel="stylesheet" href="./modal.css">
     <script src="https://use.fontawesome.com/83b97ffe44.js"></script>
 </head>
+
 <body>
     <div class="main-container">
-        
-      
         <div class="appbar">
             <div class="logo">
                 <img src="./img/—Pngtree—music icon wood_3559788.png">
@@ -20,103 +20,70 @@
                     XPLAY
                 </h3>
             </div>
-              
-               
             <div class="mode">
-                
                 <i class="fa fa-lg fa-sun-o" aria-hidden="true">Light</i>
                 <i class="fa fa-lg fa-moon-o" aria-hidden="true">Dark</i>
             </div>
         </div>
         <div class="app-container">
             <div class="player">
-                <iframe 
-   
-                    
-                    src=""
-
-
-                >
+                <iframe src="">
                 </iframe>
                 <div class="player-footer">
                     <div>
-                      
                         <div class="song-name">
                             <i class="fa fa-lg fa-music music-icon" aria-hidden="true"></i>
-                            <span>Song Name</span> 
+                            <span>Song Name</span>
                         </div>
-                        
-                      
                     </div>
-                   
-                    <div class="feedback">
-                        <i class="fa  fa-thumbs-o-up " aria-hidden="true">Like</i>
-                        <i class="fa  fa-thumbs-o-down" aria-hidden="true">Dislike</i>
-                        <i class="fa  fa-share" aria-hidden="true">Share</i>
-                    </div>
-                   
                 </div>
             </div>
-
-            <div class="video-list">
             
-                    
-                    
-                            
-                        <div class="addSong">
-                            
-                            
-                            <form class='myform'>
-                               
-                          <input id="name" class="inputf" type="text" placeholder="Name" name="" required="required">
-                          <input id="url"class="inputf"  type="text" placeholder="URL" name="" required="required">
-                          <p class="plate">PlateForm</p>
-                          
-                              <label  for="youtube"><input type="radio" id="youtube" checked='checked' name="fav_language" value="youtube"/>Youtube</label>
-                             
-                              <label for="vimeo"> <input type="radio" id="vimeo" name="fav_language" value="vimeo"/>Vimeo</label>
-                           
-                              <label for="dailymotion"> <input type="radio" id="dailymotion" name="fav_language" value="dailymotion"/>Dailymotion</label>
-                            <br/>
-                            <div class='but'>
-                                <a class="submit">Submit</a>
-                                <a class="close">Close</a>
-                            </div>
-                           
-                        </form>
-                        </div>
-                       
-                       
-                       
-                          
-                         
-                     
-                
-                
+            <div class="video-list">
+              
                 <h4>
                     Favourite List
-                   
-                    <a class="plus" id="add"><i class="fa  fa-plus-circle"   aria-hidden="true">  </i>Add Video</a>
-                    
-                       
-
-
-
+                    <a class="plus" id="add"><i class="fa  fa-plus-circle" aria-hidden="true"> </i>Add Video</a>
                 </h4>
-                <div class="list-container">
-                
-                
-
-                   
-                  
-               </div>
+                <div class="tab-flex">
+                <div class="addSong">
+                    <form class='myform'>
+                        <div class="inputFields">
+                        <input id="name" class="inputf" type="text" placeholder="Name" name="" required="required">
+                        <input id="url" class="inputf" type="text" placeholder="URL" name="" required="required">
+                    </div>
+                    <div class="plat">
+                        <p class="plate">PlateForm</p>
+                        <div class="inputss">
+                            <div>
+                                  <label for="youtube"><input type="radio" id="youtube" checked='checked'
+                                        name="fav_language" value="youtube" />Youtube</label>
+                                 </div>
+                            <div>
+                                  <label for="vimeo"> <input type="radio" id="vimeo" name="fav_language"
+                                        value="vimeo" />Vimeo</label>
+                            </div>
+                            <div>
+                                  <label for="dailymotion"> <input type="radio" id="dailymotion" name="fav_language"
+                                        value="dailymotion" />Dailymotion</label>
+                            </div>
+                        </div>
+                    </div>
+                        <br />
+                        <div class='but'>
+                            <a class="submitIT">Submit</a>
+                            <a class="close">Close</a>
+                        </div>
+                    </form>
                 </div>
-               
+
+                <div class="list-container">
+                </div>
+            </div>
+            </div>
         </div>
-        
-   
     </div>
-    
-    <script src="./app.js"></script>    
+    <script src="./app.js"></script>
 </body>
+
 </html>
