@@ -105,26 +105,21 @@ document.querySelector('.submitIT').addEventListener('click',()=>{
             default:
                 break;
         }
+        
        
         
         console.log(myurl)
         let obj=new Songs(videoName.value,myurl);
         console.log(obj)
         addStore(obj);
-        var newVideo=document.createElement('div');
-        newVideo.className='list';
-        newVideo.innerHTML=`<span>${videoName.value}</span><i class="fa  fa-times" aria-hidden="true"></i>`
+        document.location.reload();
         
-        document.querySelector('.addSong').style.display='none'
-        document.querySelector('.plus').style.display='block'
-        document.querySelector('.empty').style.display='none'
-        videolist.appendChild(newVideo);
         let store=getStore()
         if(store.length===1){
             document.querySelector('iframe').src=store[0].url
             currentsong.innerText=store[0].name
         }
-        document.location.reload();
+       
          
     }
     else{
