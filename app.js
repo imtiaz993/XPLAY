@@ -39,6 +39,7 @@ let getStore=()=>{
     let items;
     if(localStorage.getItem('items')===null){
         items = [{"name":"On My Way - Sample Video","url":"https://www.youtube.com/embed/xJPphZb0NbA"}];
+        console.log("STARTED")
       localStorage.setItem('items', JSON.stringify(items));
 
     }
