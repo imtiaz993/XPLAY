@@ -21,6 +21,7 @@ class Songs{
         this.url=url;
     }
 }
+
 let addStore=(item)=>{
     let items;
     if(localStorage.getItem('items') === null){
@@ -36,7 +37,13 @@ let addStore=(item)=>{
 
 let getStore=()=>{
     let items;
+    if(localStorage.getItem('items')===null){
+        items = [{"name":"On My Way - Sample Video","url":"https://www.youtube.com/embed/xJPphZb0NbA"}];
+      localStorage.setItem('items', JSON.stringify(items));
+
+    }
     if(localStorage.getItem('items') === null){
+        
       items = [];
     } else {
       items = JSON.parse(localStorage.getItem('items'));
@@ -182,6 +189,7 @@ for(var i=0;i<playsong.length;i++){
             
         });
         
+        document.location.reload();
         localStorage.setItem('items', JSON.stringify(newList));
         
             if(newList.length==0){
